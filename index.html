@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCD Official</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url('img/technology\,design_1.jpg') center/cover no-repeat;
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        nav {
+            background-color: #111;
+            text-align: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #25D366;
+        }
+
+        section {
+            padding: 4rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #000;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #25D366;
+            margin-top: 0.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service {
+            border: 1px solid #eee;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .portfolio-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            margin-top: 1rem;
+            background-color: #25D366;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebe5b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MCD Official</h1>
+        <p>Design • Développement • Freelance • E-commerce</p>
+    </header>
+
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Je suis Mohamed Cherif Dine, créateur digital passionné. J'interviens dans le design graphique, le
+            développement web, le commerce en ligne et le freelance. Mon objectif est de transformer vos idées en
+            solutions concrètes, innovantes et efficaces.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <h3>Design graphique</h3>
+                <p>Création de logos, affiches, identités visuelles modernes et percutantes.</p>
+            </div>
+            <div class="service">
+                <h3>Développement web</h3>
+                <p>Sites vitrines, blogs, e-commerces responsives et performants.</p>
+            </div>
+            <div class="service">
+                <h3>E-commerce</h3>
+                <p>Accompagnement dans la création et la gestion de boutiques en ligne.</p>
+            </div>
+            <div class="service">
+                <h3>Freelance</h3>
+                <p>Services personnalisés en fonction de vos besoins et de votre budget.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-gallery">
+            <img src="img/web,design.jpg" alt="Projet 1">
+            <img src="img/graphic,design.jpg" alt="Projet 2">
+            <img src="img/ecommerce.jpg" alt="Projet 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Besoin d’un service ou d’un projet ? Contactez-moi directement sur WhatsApp.</p>
+        <a class="whatsapp-button" href="https://wa.me/+2250702655310" target="_blank">Me contacter sur WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MCD Official. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
